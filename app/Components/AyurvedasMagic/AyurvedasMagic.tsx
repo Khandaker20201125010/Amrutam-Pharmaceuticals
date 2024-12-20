@@ -25,7 +25,7 @@ const AyurvedasMagic = () => {
       </div>
 
       {/* Grid Layout for Small Devices */}
-      <div className="grid grid-cols-1 max-sm:grid-cols-2 gap-6 lg:hidden">
+      <div className="grid grid-cols-2 max-sm:grid-cols-2 gap-6 lg:hidden">
         {/* Feature 1 */}
         <div className="flex flex-col items-center text-center">
           <img src={a1} alt="Personalized Wellness" className="mb-4" />

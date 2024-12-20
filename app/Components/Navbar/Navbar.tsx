@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { LiaTimesSolid } from "react-icons/lia";
 import { SlMenu } from "react-icons/sl";
+import logo from "../../../public/images/logo.png";
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
@@ -11,6 +12,7 @@ const Navbar = () => {
     const closeMenu = () => {
         setClick(false);
     };
+
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY; // Get the current scroll position
@@ -24,21 +26,21 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div style={{ backgroundColor: '#FFF7E2' }} className=" sticky backdrop-blur-lg bg-opacity-75 h-[93px] top-0 z-50 shadow-bottom-shadow">
+        <div style={{ backgroundColor: '#FFF7E2' }} className="backdrop-blur-lg bg-opacity-75 h-[93px] top-0 z-50 shadow-bottom-shadow fixed w-full">
             <div className="navbar bg-transparent">
-                <div className="navbar-start fixed z-30 md:hidden">
+                <div className="navbar-start fixed z-50 md:hidden">
                     <div className="flex mx-10 gap-5 lg:gap-10 justify-center items-center">
                         {/* Burger Icon */}
                         <div onClick={handleClick} className="icon-wrapper">
                             {click ? (
                                 <AiOutlineClose
                                     size={30}
-                                    className="text-xl text-blue-300 lg:text-2xl cursor-pointer"
+                                    className="text-xl text-green-700 lg:text-2xl cursor-pointer"
                                 />
                             ) : (
                                 <SlMenu
                                     size={30}
-                                    className="text-xl lg:text-2xl text-blue-300 font-bold cursor-pointer"
+                                    className="text-xl lg:text-2xl text-green-700 font-bold cursor-pointer"
                                 />
                             )}
                         </div>
@@ -50,25 +52,30 @@ const Navbar = () => {
                             }`}
                     >
                         {/* Fixed Header in Burger Menu */}
-                        <div className="sticky top-0 bg-gradient-to-br from-blue-900  to-blue-900  px-4 py-3 md:py-4 border-b border-white ">
+                        <div style={{ backgroundColor: '#FFF7E2' }} className="sticky top-0 px-4 py-3 md:py-4 border-b border-white">
                             <div className="text-2xl font-bold flex justify-between items-center">
                                 <a
                                     onClick={closeMenu}
                                     className="hover:text-orange-500 cursor-pointer border-2 border-white"
                                 >
-                                    <LiaTimesSolid className="text-xl lg:text-2xl cursor-pointer text-blue-500" />
+                                    <LiaTimesSolid className="text-xl lg:text-2xl cursor-pointer text-green-500" />
                                 </a>
-                                <h1 className="text-2xl lg:text-3xl text-blue-300">K.I.H</h1>
+                                <div className="flex justify-center items-center flex-grow">
+                                    <img src={logo} alt="Logo" className="max-h-12" />
+                                </div>
                             </div>
                         </div>
 
+
+
                         {/* Scrollable Content with Hidden Scrollbar */}
                         <ul
-                            className="overflow-y-scroll p-4 space-y-6 text-center text-3xl min-h-screen bg-gradient-to-b from-blue-900 via-gray-900 to-black "
+                            className="z-50 overflow-y-scroll p-4 space-y-6 text-center text-3xl min-h-screen  "
                             style={{
                                 maxHeight: "calc(100vh - 64px)",
                                 scrollbarWidth: "none" /* For Firefox */,
                                 msOverflowStyle: "none" /* For Internet Explorer and Edge */,
+                                backgroundColor: '#FFF7E2'
                             }}
                         >
                             {/* Hide Scrollbar for WebKit Browsers */}
@@ -77,7 +84,7 @@ const Navbar = () => {
                     display: none;
                   }
                 `}</style>
-                            asdasd
+
                         </ul>
                     </div>
 
@@ -88,6 +95,9 @@ const Navbar = () => {
                             onClick={closeMenu} // Close menu when clicking on the overlay
                         ></div>
                     )}
+                </div>
+                <div className="flex max-sm:justify-center max-sm:items-center flex-grow p-2">
+                    <img src={logo} alt="Logo" className="max-h-12 md:w-40" />
                 </div>
 
             </div>

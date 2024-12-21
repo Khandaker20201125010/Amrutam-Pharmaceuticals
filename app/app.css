@@ -10,3 +10,11 @@ body {
     color-scheme: dark;
   }
 }
+.ConculationsBG{
+  background-image: url('../public/images/conculationBG.png');
+  background-repeat: no-repeat;
+  
+ 
+  width: 100%;
+ 
+}

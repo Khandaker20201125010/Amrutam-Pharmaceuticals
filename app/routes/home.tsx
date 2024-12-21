@@ -2,6 +2,7 @@ import Banner from "~/Components/Banner/Banner";
 import type { Route } from "./+types/home";
 import AyurvedasMagic from "~/Components/AyurvedasMagic/AyurvedasMagic";
 import Conculations from "~/Components/Conculations/Conculations";
+import ConsulationBanner from "~/Components/Conculations/ConsulationBanner";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -16,6 +17,7 @@ export default function Home() {
       <Banner></Banner>
       <AyurvedasMagic></AyurvedasMagic>
       <Conculations></Conculations>
+      <ConsulationBanner></ConsulationBanner>
     </div>
   );
 }

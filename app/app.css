@@ -13,8 +13,27 @@ body {
 .ConculationsBG{
   background-image: url('../public/images/conculationBG.png');
   background-repeat: no-repeat;
-  
- 
   width: 100%;
- 
+}
+/* Center the pagination bullets */
+/* Center and position the pagination bullets below */
+.swiper-pagination {
+  position: relative; /* Make pagination relative to Swiper */
+  margin-top: 20px; /* Adds space below the cards */
+  text-align: center; /* Center the pagination bullets */
+}
+
+/* Style the pagination bullets */
+.swiper-pagination-bullet {
+  background-color: #3A643B !important; /* Green color for bullets */
+  opacity: 0.7;
+  width: 12px;
+  height: 12px;
+  transition: opacity 0.3s ease;
+}
+
+/* Active bullet styling */
+.swiper-pagination-bullet-active {
+  background-color: #4d964f !important; /* Darker green for active bullet */
+  opacity: 1;
 }

@@ -13,7 +13,7 @@ const AyurvedasMagic = () => {
       <h2 className="text-center md:text-4xl text-2xl font-extrabold text-green-800 mb-6">
         <span className="md:border-b-4 border-[#C3D0C4]"> Discover Ayurveda’s Magic With Us</span>
       </h2>
-      <p className="text-center text-gray-700 text-md md:w-2/6 mx-auto mb-10">
+      <p className="text-center text-gray-700 text-md md:w-[560px] mx-auto mb-10">
         Ayurvedic treatment aims to balance your body and mind, bringing harmony
         and vitality. It’s like a journey to better health using ancient wisdom,
         a totally effective approach for a better life.

@@ -6,6 +6,7 @@ import ConsulationBanner from "~/Components/Conculations/ConsulationBanner";
 import AyurvedasAppoarch from "~/Components/AyurvedasAppoarch/AyurvedasAppoarch";
 import CustomerReview from "~/Components/CustomerReview/CustomerReview";
 import Experts from "~/Components/Experts/Experts";
+import HomeApp from "~/Components/HomeApp/HomeApp";
 
 
 export function meta({}: Route.MetaArgs) {
@@ -25,6 +26,7 @@ export default function Home() {
       <AyurvedasAppoarch></AyurvedasAppoarch>
       <CustomerReview></CustomerReview>
       <Experts></Experts>
+      <HomeApp></HomeApp>
 
     </div>
   );

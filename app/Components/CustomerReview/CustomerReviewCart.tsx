@@ -1,0 +1,57 @@
+
+
+const CustomerReviewCart = ({ review, isActive }) => {
+    return (
+        <div className="container mx-auto bg-white rounded-xl mt-16 shadow-lg mb-6 md:w-[315px] sm:w-[380px] h-auto sm:h-[371px]">
+            {/* Review Header */}
+            <div
+                className={`mb-2 rounded-t-xl ${isActive ? "bg-[#ECE7FF]" : "bg-[#ECFEE7]"
+                    }`}
+            >
+                <h1 className=" font-semibold rounded-t-xl p-4 text-black">{review.header}</h1>
+            </div>
+
+            <div className="p-6">
+                {/* Customer Info Section */}
+                <div className="flex items-center mb-4">
+                    {/* Placeholder for customer image */}
+                    <div className="w-12 h-12 rounded-full bg-gray-300 mr-4"></div>
+                    <div>
+                        <h3 className="font-bold text-black text-lg">{review.customerName}</h3>
+                        <p className="text-gray-300">{review.place}</p>
+                    </div>
+                    <div className="ml-auto">
+                        <p className="text-xs text-black">{review.reviewDate}</p>
+                    </div>
+                </div>
+
+                {/* Rating Section */}
+                <div className="flex items-center mb-4">
+                    <div className="flex items-center mr-2">
+                        {/* Display the rating dynamically based on the review */}
+                        {[...Array(5)].map((_, index) => (
+                            <svg
+                                key={index}
+                                xmlns="http://www.w3.org/2000/svg"
+                                className={`w-4 h-4 ${index < review.rating ? "text-yellow-500" : "text-gray-300"
+                                    }`}
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                            >
+                                <path d="M10 15l-5.878 3.09 1.121-6.535L0 6.545l6.545-.954L10 0l2.455 5.591L20 6.545l-5.243 4.005 1.121 6.535L10 15z" />
+                            </svg>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Review Title */}
+                <p className="text-gray-700 text-sm sm:text-base"><i>''</i>{review.reviewTitle}<i>''</i></p>
+
+                {/* Description */}
+                <p className="text-gray-600 mt-2 text-xs sm:text-sm text-start md:w-[250px] flex gap-5">{review.description}</p>
+            </div>
+        </div>
+    );
+};
+
+export default CustomerReviewCart;

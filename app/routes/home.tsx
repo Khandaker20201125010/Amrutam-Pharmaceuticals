@@ -4,6 +4,9 @@ import AyurvedasMagic from "~/Components/AyurvedasMagic/AyurvedasMagic";
 import Conculations from "~/Components/Conculations/Conculations";
 import ConsulationBanner from "~/Components/Conculations/ConsulationBanner";
 import AyurvedasAppoarch from "~/Components/AyurvedasAppoarch/AyurvedasAppoarch";
+import CustomerReview from "~/Components/CustomerReview/CustomerReview";
+import Experts from "~/Components/Experts/Experts";
+
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -20,6 +23,9 @@ export default function Home() {
       <Conculations></Conculations>
       <ConsulationBanner></ConsulationBanner>
       <AyurvedasAppoarch></AyurvedasAppoarch>
+      <CustomerReview></CustomerReview>
+      <Experts></Experts>
+
     </div>
   );
 }

@@ -46,9 +46,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return(
-    <div>
+    <div className="m ">
       <Navbar></Navbar>
-      <div className="min-h-screen">
+      <div className="min-h-screen ">
       <Outlet />
       </div>
     </div>

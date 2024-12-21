@@ -32,7 +32,8 @@ const Banner = () => {
           }}
         >
         
-          <div className="absolute inset-0 bg-gradient-to-r from-red-950/40 via-black/90 to-transparent"></div>
+          <div className="absolute inset-0 xl:bg-gradient-to-r from-red-950/40 via-black/90 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-red-950/40 via-black/90 to-transparent w-[50%]"></div>
         </div>
 
         {/* Small device background image (bannerImage2) */}

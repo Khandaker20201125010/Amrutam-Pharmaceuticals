@@ -18,18 +18,18 @@ const AyurvedasAppoarch = () => {
         },
         {
             id: 2,
-            title: "Consultation",
-            description: "Our practitioners will assess your health and provide personalized recommendations.",
+            title: "Consultations",
+            description: "The next stage involves a thorough consultation with an Ayurveda practitioner.",
         },
         {
             id: 3,
-            title: "Treatment Plan",
-            description: "A customized treatment plan will be created based on your unique needs.",
+            title: "Treatment Planning",
+            description: "The Ayurvedic practitioner creates a personalized treatment plan for you.",
         },
         {
             id: 4,
-            title: "Follow-Up",
-            description: "Regular follow-ups to monitor progress and adjust treatments as necessary.",
+            title: "Maintenance",
+            description: "These visits allow for assessment of progress, adjustments to the treatment.",
         },
     ];
 
@@ -53,6 +53,7 @@ const AyurvedasAppoarch = () => {
                         }}
                         spaceBetween={20}
                         slidesPerView={1}
+                        loop={true}
                         className="swiper-container"
                     >
                         {cards.map((card) => (
@@ -77,20 +78,20 @@ const AyurvedasAppoarch = () => {
                 </div>
 
                 {/* Grid for Medium and Larger Devices */}
-                <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-5">
+                <div className="hidden md:grid  grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-5 ">
                     {cards.map((card) => (
                         <div
                             key={card.id}
-                            className="bg-[#FFF7E2] rounded-xl border-t-4 border-[#3A643B] shadow-md text-center flex flex-col items-center justify-center px-5 py-8"
-                            style={{ width: '290px', height: '315px' }}
+                            className="bg-[#FFF7E2] rounded-xl border-t-4 border-[#3A643B] shadow-md text-center flex flex-col xl:w-[290px] xl:h-[315px] lg:h[315px] items-center justify-center px-3 py-8"
+                           
                         >
                             <div className="rounded-full bg-[rgba(58,100,59,0.66)] w-16 h-16 flex items-center justify-center mb-4">
                                 <span className="text-white font-bold text-2xl">{card.id}</span>
                             </div>
-                            <h4 className="text-lg sm:text-xl font-bold text-[#3A643B] text-center">
+                            <h4 className="text-lg sm:text-xl font-bold text-[#3A643B]  text-center">
                                 {card.title}
                             </h4>
-                            <p className="text-sm text-gray-600 mt-2 text-center">
+                            <p className="text-sm text-gray-600 mt-2 text-center md:w-[200px]">
                                 {card.description}
                             </p>
                         </div>

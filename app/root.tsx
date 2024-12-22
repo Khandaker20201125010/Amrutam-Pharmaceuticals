@@ -47,7 +47,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return(
-    <div className="">
+    <div className="max-w-[1440px] mx-auto">
       <Navbar></Navbar>
       <div className="min-h-screen ">
       <Outlet />

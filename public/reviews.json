@@ -35,17 +35,17 @@
         "customerName": "Arjun Patel",
         "place": "Mumbai, India",
         "reviewDate": "10/12/24",
-        "rating": 4.8,
+        "rating": 4,
         "reviewTitle": "Highly Recommend",
         "description": "Great atmosphere and friendly staff. They truly understand the principles of Ayurveda.",
         "consultationReason": "Joint Pain"
       },
       {
         "header": "Consulted for Weight Management",
-        "customerName": "Carlos Hernandez",
+        "customerName": "Carlos ",
         "place": "Madrid, Spain",
         "reviewDate": "18/12/24",
-        "rating": 4.7,
+        "rating": 4.5,
         "reviewTitle": "Wonderful Experience",
         "description": "The personalized approach really stood out. I felt cared for and would definitely return.",
         "consultationReason": "Weight Management"
@@ -55,7 +55,7 @@
         "customerName": "Lina Chen",
         "place": "Shanghai, China",
         "reviewDate": "20/12/24",
-        "rating": 4.9,
+        "rating": 4.5,
         "reviewTitle": "Exceptional Service",
         "description": "From start to finish, everything was perfect. The follow-up sessions were very effective too.",
         "consultationReason": "Overall Wellness"

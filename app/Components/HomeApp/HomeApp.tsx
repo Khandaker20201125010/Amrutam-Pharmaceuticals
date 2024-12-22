@@ -6,7 +6,7 @@ const HomeApp = () => {
       {/* Left Content */}
       <div className="flex container mx-auto justify-evenly  flex-col lg:flex-row items-center lg:items-start">
         <div className="max-w-lg text-center lg:text-left ">
-          <h2 className="text-[#3A643B] text-3xl sm:text-4xl font-bold mb-4">
+          <h2 className="text-[#3A643B] text-2xl sm:text-4xl font-bold mb-4">
             Amrutam Home App
           </h2>
           <p className="text-gray-700 mb-6">

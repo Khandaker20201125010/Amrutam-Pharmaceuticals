@@ -50,7 +50,7 @@ const Footer = () => {
                 <div className="bg-[#E7EFE9] py-8 px-6 lg:hidden md:hidden">
                     {/* Get in Touch Section */}
                     <div className="text-black text-sm">
-                        <h3 className="font-bold text-lg mb-2">Get in touch</h3>
+                        <h3 className="font-bold  text-[#3A643B] text-lg mb-2">Get in touch</h3>
                         <p className="mb-2">support@amrutam.co.in</p>
                         <p className="mb-2">
                             Amrutam Pharmaceuticals Pvt Ltd., <br />

@@ -1,6 +1,9 @@
-
+import { Rating } from "@smastrom/react-rating";
+import '@smastrom/react-rating/style.css'
 
 const CustomerReviewCart = ({ review, isActive }) => {
+
+
     return (
         <div className="container mx-auto bg-white rounded-xl mt-16 shadow-lg mb-6 md:w-[315px] sm:w-[380px] h-auto sm:h-[371px]">
             {/* Review Header */}
@@ -26,21 +29,15 @@ const CustomerReviewCart = ({ review, isActive }) => {
                 </div>
 
                 {/* Rating Section */}
-                <div className="flex items-center mb-4">
-                    <div className="flex items-center mr-2">
+                <div className="flex items-center mb-4 ">
+                    <div className="flex items-center   mr-2">
                         {/* Display the rating dynamically based on the review */}
-                        {[...Array(5)].map((_, index) => (
-                            <svg
-                                key={index}
-                                xmlns="http://www.w3.org/2000/svg"
-                                className={`w-4 h-4 ${index < review.rating ? "text-yellow-500" : "text-gray-300"
-                                    }`}
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path d="M10 15l-5.878 3.09 1.121-6.535L0 6.545l6.545-.954L10 0l2.455 5.591L20 6.545l-5.243 4.005 1.121 6.535L10 15z" />
-                            </svg>
-                        ))}
+
+                        <Rating
+                            style={{ maxWidth: 130 }}
+                            value={review.rating}
+                            readOnly
+                        />
                     </div>
                 </div>
 

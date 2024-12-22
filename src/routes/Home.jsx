@@ -6,6 +6,7 @@ import Conculations from "../Components/Conculations/Conculations";
 import ConsulationBanner from "../Components/Conculations/ConsulationBanner";
 import CustomerReview from "../Components/CustomerReview/CustomerReview";
 import Experts from "../Components/Experts/Experts";
+import HomeApp from "../Components/HomeApp/HomeApp";
 
 const Home = () => {
     return (
@@ -18,7 +19,7 @@ const Home = () => {
         <AyurvedasAppoarch></AyurvedasAppoarch>
         <CustomerReview></CustomerReview>
         <Experts></Experts>
-        {/* <HomeApp></HomeApp> */}
+        <HomeApp></HomeApp>
   
       </div>
     );

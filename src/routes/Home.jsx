@@ -1,15 +1,18 @@
+import AyurvedasMagic from "../Components/AyurvedasMagic/AyurvedasMagic";
+import Banner from "../Components/Banner/Banner";
+
 const Home = () => {
     return (
         <div>
-        {/* <Banner></Banner>
+        <Banner></Banner>
         <AyurvedasMagic></AyurvedasMagic>
-        <Conculations></Conculations>
+        {/* <Conculations></Conculations>
         <ConsulationBanner></ConsulationBanner>
         <AyurvedasAppoarch></AyurvedasAppoarch>
         <CustomerReview></CustomerReview>
         <Experts></Experts>
-        <HomeApp></HomeApp>
-   */}
+        <HomeApp></HomeApp> */}
+  
       </div>
     );
 };

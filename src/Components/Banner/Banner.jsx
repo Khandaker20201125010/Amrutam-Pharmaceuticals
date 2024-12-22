@@ -1,6 +1,5 @@
 import bannerImage from "../../assets/images/banner1.png"; // Adjust the path as necessary
 import bannerImage2 from "../../assets/images/banner2.png"; 
-import UnderBannerFrames from "./UnderBannerFrames";
 
 const Banner = () => {
   return (

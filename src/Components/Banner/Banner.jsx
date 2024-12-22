@@ -1,5 +1,6 @@
 import bannerImage from "../../assets/images/banner1.png"; // Adjust the path as necessary
 import bannerImage2 from "../../assets/images/banner2.png"; 
+import UnderBannerFrames from "./UnderBannerFrames";
 
 const Banner = () => {
   return (
@@ -49,6 +50,7 @@ const Banner = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
         </div>
       </div>
+      
     </div>
   );
 };

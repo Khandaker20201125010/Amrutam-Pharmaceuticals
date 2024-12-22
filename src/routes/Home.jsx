@@ -5,6 +5,7 @@ import UnderBannerFrames from "../Components/Banner/UnderBannerFrames";
 import Conculations from "../Components/Conculations/Conculations";
 import ConsulationBanner from "../Components/Conculations/ConsulationBanner";
 import CustomerReview from "../Components/CustomerReview/CustomerReview";
+import Experts from "../Components/Experts/Experts";
 
 const Home = () => {
     return (
@@ -16,7 +17,7 @@ const Home = () => {
         <ConsulationBanner></ConsulationBanner>
         <AyurvedasAppoarch></AyurvedasAppoarch>
         <CustomerReview></CustomerReview>
-        {/* <Experts></Experts> */}
+        <Experts></Experts>
         {/* <HomeApp></HomeApp> */}
   
       </div>

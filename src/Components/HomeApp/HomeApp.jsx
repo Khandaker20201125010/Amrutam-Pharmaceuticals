@@ -10,21 +10,19 @@ const HomeApp = () => {
             Amrutam Home App
           </h2>
           <p className="text-gray-700 mb-6">
-            The Amrutam Home App is your one-stop app for all things Ayurveda! Apart from mimicking the significant
-            characteristics of our website, this app offers a wide range of additional features.
+            The Amrutam Home App is your one-stop app for all things Ayurveda!
+            Apart from mimicking the significant characteristics of our website,
+            this app offers a wide range of additional features.
           </p>
 
           {/* Image on small screen between the text */}
           <div className="lg:hidden  mt-8 mb-8">
-            <img
-              src={mobile}
-              alt="Mobile App"
-              className="mx-auto w-full"
-            />
+            <img src={mobile} alt="Mobile App" className="mx-auto w-full" />
           </div>
 
           <p className="text-gray-800 font-semibold text-lg mb-6">
-            Get A Diet & Lifestyle Consultation With Ayurvedic Experts Across The Globe
+            Get A Diet & Lifestyle Consultation With Ayurvedic Experts Across
+            The Globe
           </p>
 
           <p className="text-black text-xl font-bold mb-4">Get The App Now</p>
@@ -46,12 +44,8 @@ const HomeApp = () => {
           </div>
         </div>
         {/* Right Content */}
-        <div className="relative mt-10 lg:mt-0 lg:ml-12 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg order-first lg:order-last max-sm:hidden">
-          <img
-            src={mobile}
-            alt="Mobile App"
-            className="mx-auto w-full"
-          />
+        <div className="relative mt-10 lg:mt-0 lg:ml-12 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg order-first lg:order-last hidden sm:hidden md:hidden lg:block">
+          <img src={mobile} alt="Mobile App" className="mx-auto w-full" />
         </div>
       </div>
     </div>

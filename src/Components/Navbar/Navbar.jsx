@@ -100,7 +100,7 @@ const Navbar = () => {
               ></div>
             )}
           </div>
-          <div className="flex justify-center lg:justify-start  items-center flex-grow mx-20">
+          <div className="flex justify-center lg:justify-start  items-center flex-grow mx-20 py-5">
             <img src={logo} alt="Logo" className="max-h-12 md:w-40" />
           </div>
         </div>
